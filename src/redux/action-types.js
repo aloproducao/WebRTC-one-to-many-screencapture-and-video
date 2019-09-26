@@ -1,0 +1,15 @@
+export const LIVE = "LIVE";
+export const RECORDING = "RECORDING";
+export const TIMER = "TIMER";
+export const TIME = "TIME";
+export const ADDCOORD = "ADDCOORD";
+export const ADDVALIDITY = "ADDVALIDITY";
+export const FIXATION = "FIXATION";
+export const MESSAGE = "MESSAGE";
+export const CONNECTED = "CONNECTED";
+export const ASPECTRATIO = "ASPECTRATIO";
+export const CALIBRATE = "CALIBRATE";
+export const CALIBRATIONRESULT = "CALIBRATIONRESULT";
+export const NAVBARPIN = "NAVBARPIN";
+export const DEVICELIST = "DEVICELIST";
+export const LIVEVIDEO = "LIVEVIDEO";
