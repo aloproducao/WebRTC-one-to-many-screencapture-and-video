@@ -13,7 +13,7 @@ import {
   CALIBRATIONRESULT,
   NAVBARPIN,
   DEVICELIST,
-  LIVEVIDEO
+  LIVEVIDEO,
 } from "./action-types";
 
 const initialState = {
@@ -37,13 +37,13 @@ const initialState = {
         computerName: "",
         programId: "",
         programName: "",
-        processId: ""
+        processId: "",
       },
       name: "",
-      isSelected: false
-    }
+      isSelected: false,
+    },
   ],
-  video: false
+  video: false,
 };
 
 const rootReducer = (state = initialState, action) => {
@@ -67,13 +67,13 @@ const rootReducer = (state = initialState, action) => {
       // if array has 60 rows remove first and then add new coord
       return {
         ...state,
-        coord: state.coord.slice(-30).concat([action.payload])
+        coord: state.coord.slice(-30).concat([action.payload]),
       };
     case ADDVALIDITY:
       // if array has 60 rows remove first and then add new coord
       return {
         ...state,
-        validity: state.validity.slice(-30).concat([action.payload])
+        validity: state.validity.slice(-30).concat([action.payload]),
       };
     case MESSAGE:
       return { ...state, message: action.payload };
